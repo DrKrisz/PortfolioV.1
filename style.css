@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gabarito", cursive;
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; /* or any background color you prefer */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Change this to the color you want for the scrollbar */
+  border-radius: 0.25em; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change this to the color you want on hover */
+}
+
+.welcome-site {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.text-container {
+  flex: 1; /* Take remaining space */
+  padding: 20px 100px 20px 200px; /* Add some padding for spacing */
+}
+.front-text {
+  font-size: 20px;
+  margin-bottom: 100px; /* Adjust the margin as needed */
+}
+
+.face-img-front {
+  max-width: 50%; /* Limit image width to 50% of the container */
+  height: auto; /* Maintain image aspect ratio */
+  display: block; /* Remove extra spacing under the image */
+  margin: 0 auto; /* Center the image horizontally */
+  filter: grayscale(100%); /* Apply a black and white effect */
+}
+
+/* On hover, remove the grayscale effect to reveal the color */
+.face-img-front:hover {
+  filter: grayscale(0%);
+  transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.more-aboutme {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #ffd700;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.more-aboutme:hover {
+  color: #ffd700;
+  background-color: white;
+  border: 1px solid #ffd700;
+}
+
+.skill {
+  width: fit-content;
+  color: white;
+  background-color: #ffd700;
+  padding: 5px 15px 5px 15px;
+  font-size: 20px;
+}
+
+.name {
+  text-decoration: underline;
+  color: #ffd700;
+  font-family: "Pixelify Sans", cursive;
+}
