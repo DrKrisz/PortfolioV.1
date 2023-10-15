@@ -34,7 +34,8 @@ body {
   background: #555; /* Change this to the color you want on hover */
 }
 
-.welcome-site {
+.welcome-site,
+.about-me {
   display: flex;
   align-items: center; /* Center vertically */
 }
@@ -126,6 +127,11 @@ body {
 .calander {
   color: red;
   text-decoration: underline;
+}
+
+.aboutme-top img {
+  width: 100%;
+  min-width: 100%; /* Limit image width to 50% of the container */
 }
 
 /* Styles for smaller screens (e.g., mobile) */
